@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new_style.css">
+    <title>Gallery - PKTravel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon_area">
+                <img src="airplane2.png" alt="PKTravel Logo" class="logo-image">
+                <span class="icon_name">PKTravel</span>
+            </div>
+            <div class="menu_area"></div>
+            <ul>
+                <li><a href="travel.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="gallery-hero">
+                <img src="travel-hd-axhrsecphqby11wk001.jpg" alt="Gallery" width="100%" height="100%">
+                <b class="main_content">Explore Our Gallery</b>
+                <p>Discover the beautiful destinations and experiences our customers have enjoyed</p>
+            </div>
+
+            <div class="gallery-intro">
+                <h1 class="gallery_heading">Destination Showcase</h1>
+                <p>Browse through our collection of stunning travel photos from around the world. These images showcase the incredible beauty of our featured destinations and the unforgettable experiences our travelers have enjoyed with PKTravel.</p>
+            </div>
+
+            <div class="gallery-filter">
+                <h3>Filter by Destination:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterGallery('all')">All Destinations</button>
+                    <button class="filter-btn" onclick="filterGallery('beach')">Beach Resorts</button>
+                    <button class="filter-btn" onclick="filterGallery('mountains')">Mountain Getaways</button>
+                    <button class="filter-btn" onclick="filterGallery('culture')">Cultural Sites</button>
+                    <button class="filter-btn" onclick="filterGallery('adventure')">Adventure Tours</button>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <h2>Featured Destinations</h2>
+                
+                <div class="gallery-section">
+                    <h3>Tropical Beach Paradises</h3>
+                    <div class="photo-grid">
+                        <div class="gallery-item beach" data-category="beach">
+                            <img src="Seychelles-Islands-Travel-Wallpaper008.jpg" alt="Seychelles Islands - Crystal clear waters and pristine beaches">
+                            <div class="image-overlay">
+                                <h4>Seychelles Islands</h4>
+                                <p>Crystal clear waters and pristine beaches</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item beach" data-category="beach">
+                            <img src="pexels-photo-3278215006.jpeg" alt="Beach Paradise - Experience the perfect beach getaway">
+                            <div class="image-overlay">
+                                <h4>Tropical Beach Paradise</h4>
+                                <p>Experience the perfect beach getaway</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item beach" data-category="beach">
+                            <img src="11718d_2dd054ffe9394bac9603fc91627c7136~mv2_d_4032_3024_s_4_2007.jpg" alt="Island Resort - Luxury accommodations with ocean views">
+                            <div class="image-overlay">
+                                <h4>Island Resort Escape</h4>
+                                <p>Luxury accommodations with ocean views</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h3>Cultural & Heritage Sites</h3>
+                    <div class="photo-grid">
+                        <div class="gallery-item culture" data-category="culture">
+                            <img src="7-travel-photography-india011.jpg" alt="India Culture - Experience ancient temples and vibrant cultures">
+                            <div class="image-overlay">
+                                <h4>India's Rich Heritage</h4>
+                                <p>Experience ancient temples and vibrant cultures</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item culture" data-category="culture">
+                            <img src="Travel-Images-For-Desktop009.jpg" alt="Cultural Tour - Discover historical landmarks and traditions">
+                            <div class="image-overlay">
+                                <h4>Heritage Tour</h4>
+                                <p>Discover historical landmarks and traditions</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item culture" data-category="culture">
+                            <img src="BeautyOfBaliCustomizableFull-DayPrivateTour-KlookIndia012.jpg" alt="Bali - Temples, traditions, and tropical landscapes">
+                            <div class="image-overlay">
+                                <h4>Bali's Beauty</h4>
+                                <p>Temples, traditions, and tropical landscapes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h3>Mountain & Adventure</h3>
+                    <div class="photo-grid">
+                        <div class="gallery-item adventure" data-category="adventure">
+                            <img src="Desktop-Travel-Images010.jpg" alt="Mountain View - Hiking and trekking in scenic mountain ranges">
+                            <div class="image-overlay">
+                                <h4>Mountain Adventures</h4>
+                                <p>Hiking and trekking in scenic mountain ranges</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item mountains" data-category="adventure">
+                            <img src="Budget-Friendly-Travel-Tips-1004.jpg" alt="Adventure - Create unforgettable mountain experiences">
+                            <div class="image-overlay">
+                                <h4>Adventure Awaits</h4>
+                                <p>Create unforgettable mountain experiences</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item adventure" data-category="adventure">
+                            <img src="beautiful-travel-730oz7ejbh6axdlf002.jpg" alt="Nature Escape - Explore breathtaking natural landscapes">
+                            <div class="image-overlay">
+                                <h4>Nature's Splendor</h4>
+                                <p>Explore breathtaking natural landscapes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="customer-stories">
+                <h2>Customer Travel Stories</h2>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-image">📸</div>
+                        <h4>Romantic Getaway to Maldives</h4>
+                        <p>"PKTravel organized our honeymoon perfectly. Every detail was taken care of, and we had the most romantic experience of our lives!" - Sarah & John</p>
+                    </div>
+                    <div class="story-card">
+                        <div class="story-image">🗼</div>
+                        <h4>Family Adventure in Europe</h4>
+                        <p>"Our family of five had an amazing time exploring Europe. The itinerary was perfectly balanced for all ages." - The Sharma Family</p>
+                    </div>
+                    <div class="story-card">
+                        <div class="story-image">🏔️</div>
+                        <h4>Thrilling Trek in Nepal</h4>
+                        <p>"The trekking experience was unbelievable. Professional guides and well-planned logistics made it unforgettable!" - Rajesh</p>
+                    </div>
+                    <div class="story-card">
+                        <div class="story-image">🌴</div>
+                        <h4>Solo Travel to Thailand</h4>
+                        <p>"As a solo traveler, I felt completely safe and supported. PKTravel made solo travel accessible and fun!" - Priya</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-cta">
+                <h2>Ready to Create Your Own Travel Story?</h2>
+                <p>Explore our destination packages and book your next adventure with PKTravel</p>
+                <a href="services.html" class="cta-button">Browse Our Packages</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="address">
+                531 veedhi<br>
+                near south india shopping mall<br>
+                vizinagaram
+            </div>
+            <div class="contact">
+                <p>pktravel@gmail.com</p>   
+                <p>+919966420557</p>
+                <p>@2026</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter items
+            if (category === 'all') {
+                items.forEach(item => {
+                    item.style.display = 'block';
+                    setTimeout(() => item.style.opacity = '1', 10);
+                });
+            } else {
+                items.forEach(item => {
+                    if (item.dataset.category === category) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.style.opacity = '1', 10);
+                    } else {
+                        item.style.opacity = '0.3';
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
